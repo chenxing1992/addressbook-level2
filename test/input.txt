@@ -23,7 +23,7 @@
   list
 
 ##########################################################
-# test add person command, setup state for futuer tests
+# test add person command, setup state for future tests
 ##########################################################
 
   # should catch invalid args format
@@ -40,6 +40,7 @@
   add Valid Name p/12345 e/valid@e.mail a/valid, address, #01-23, 456789 t/invalid_-[.tag
 
   # should add correctly and list non private information
+  # should show list after every addition
   add Adam Brown p/111111 e/adam@gmail.com a/322, alpha street, #33-44, 443434
   list
   add Betsy Choo pp/222222 pe/benchoo@nus.edu.sg pa/444, beta street, #88-88, 3434343 t/secretive
