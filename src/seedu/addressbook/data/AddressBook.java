@@ -17,10 +17,10 @@ import seedu.addressbook.data.tag.UniqueTagList;
 
 /**
  * Represents the entire address book. Contains the data of the address book.
- *
+ * <p>
  * Guarantees:
- *  - Every tag found in every person will also be found in the tag list.
- *  - The tags in each person point to tag objects in the master list. (== equality)
+ * - Every tag found in every person will also be found in the tag list.
+ * - The tags in each person point to tag objects in the master list. (== equality)
  */
 public class AddressBook {
 
@@ -40,7 +40,7 @@ public class AddressBook {
      * Also updates the tag list with any missing tags found in any person.
      *
      * @param persons external changes to this will not affect this address book
-     * @param tags external changes to this will not affect this address book
+     * @param tags    external changes to this will not affect this address book
      */
     public AddressBook(UniquePersonList persons, UniqueTagList tags) {
         this.allPersons = new UniquePersonList(persons);
@@ -49,19 +49,24 @@ public class AddressBook {
             syncTagsWithMasterList(p);
         }
     }
+
     /**
      * Sorts the Addressbook list in alphabetical order
-        */
-     public AddressBook sort() {
-                 allPersons.sort();
-                 return this;
+     */
 
-}
+    public AddressBook sort() {
+
+        allPersons.sort();
+
+        return this;
+
+    }
+
 
     /**
      * Ensures that every tag in this person:
-     *  - exists in the master list {@link #allTags}
-     *  - points to a Tag object in the master list
+     * - exists in the master list {@link #allTags}
+     * - points to a Tag object in the master list
      */
     private void syncTagsWithMasterList(Person person) {
         final UniqueTagList personTags = person.getTags();
@@ -135,7 +140,7 @@ public class AddressBook {
     public boolean equals(Object other) {
         return other == this // short circuit if same object
                 || (other instanceof AddressBook // instanceof handles nulls
-                        && this.allPersons.equals(((AddressBook) other).allPersons)
-                        && this.allTags.equals(((AddressBook) other).allTags));
+                && this.allPersons.equals(((AddressBook) other).allPersons)
+                && this.allTags.equals(((AddressBook) other).allTags));
     }
 }
