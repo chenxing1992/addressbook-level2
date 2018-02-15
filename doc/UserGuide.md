@@ -34,7 +34,7 @@ Format: `help`
 > Help is also shown if you enter an incorrect command e.g. `abcd`
  
 ### Adding a person: `add`
-Adds a person to the address book<br>
+Adds a person to the address book and show all added person list out after adding<br>
 Format: `add NAME [p]p/PHONE_NUMBER [p]e/EMAIL [p]a/ADDRESS [t/TAG]...` 
  
 > Words in `UPPER_CASE` are the parameters, items in `SQUARE_BRACKETS` are optional, 
@@ -48,6 +48,9 @@ Format: `add NAME [p]p/PHONE_NUMBER [p]e/EMAIL [p]a/ADDRESS [t/TAG]...`
 Examples: 
 * `add John Doe p/98765432 e/johnd@gmail.com a/John street, block 123, #01-01`
 * `add Betsy Crowe pp/1234567 e/betsycrowe@gmail.com pa/Newgate Prison t/criminal t/friend`
+### Sort all persons : `sort`
+Sorting all person from the address book in alphabetical ordering.
+Format: `sorting`
 
 ### Listing all persons : `list`
 Shows a list of all persons in the address book.<br>
