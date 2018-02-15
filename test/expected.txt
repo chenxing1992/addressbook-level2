@@ -198,6 +198,7 @@
 || The person index provided is invalid
 || ===================================================
 || ===================================================
+
 || 	1. David B Phone: 232424 Email: David@hotmail.com Address: 2311, june street Tags:
 || 	2. mary kiss Tags: [secretive]
 || 	3. nub peter Email: nub_peter.d@ntu.edu.sg Address: 342, hisses street Tags: [school][brothers]
@@ -205,11 +206,13 @@
 || 	5. tissue box Phone: 2323 Email: tissue@gmail.com Tags: [tissue][box]
 ||
 || 5 persons listed!
+
 || ===================================================
 || Enter command: || [Command entered:  view 6]
 || The person index provided is invalid
 || ===================================================
 || ===================================================
+
 || 	1. David B Phone: 232424 Email: David@hotmail.com Address: 2311, june street Tags:
 || 	2. mary kiss Tags: [secretive]
 || 	3. nub peter Email: nub_peter.d@ntu.edu.sg Address: 342, hisses street Tags: [school][brothers]
@@ -217,11 +220,13 @@
 || 	5. tissue box Phone: 2323 Email: tissue@gmail.com Tags: [tissue][box]
 ||
 || 5 persons listed!
+
 || ===================================================
 || Enter command: || [Command entered:  viewall -1]
 || The person index provided is invalid
 || ===================================================
 || ===================================================
+
 || 	1. David B Phone: 232424 Email: David@hotmail.com Address: 2311, june street Tags:
 || 	2. mary kiss Tags: [secretive]
 || 	3. nub peter Email: nub_peter.d@ntu.edu.sg Address: 342, hisses street Tags: [school][brothers]
@@ -234,6 +239,7 @@
 || The person index provided is invalid
 || ===================================================
 || ===================================================
+
 || 	1. David B Phone: 232424 Email: David@hotmail.com Address: 2311, june street Tags:
 || 	2. mary kiss Tags: [secretive]
 || 	3. nub peter Email: nub_peter.d@ntu.edu.sg Address: 342, hisses street Tags: [school][brothers]
@@ -246,6 +252,7 @@
 || The person index provided is invalid
 || ===================================================
 || ===================================================
+
 || 	1. David B Phone: 232424 Email: David@hotmail.com Address: 2311, june street Tags:
 || 	2. mary kiss Tags: [secretive]
 || 	3. nub peter Email: nub_peter.d@ntu.edu.sg Address: 342, hisses street Tags: [school][brothers]
@@ -331,6 +338,7 @@
 || Deleted Person: nono Dickson Phone: (private) 343434 Email: nono.d@nus.edu.sg Address: 333, gamma street, #01-23, 456789 Tags: [school][friends]
 || ===================================================
 || Enter command: || [Command entered:  delete 2]
+
 || Person could not be found in address book
 || ===================================================
 || Enter command: || [Command entered:  view 2]
