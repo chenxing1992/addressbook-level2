@@ -125,21 +125,27 @@ public class UniquePersonList implements Iterable<Person> {
         }
     }
 
+
     /**
      * +     * Sort the list in alphabetical order
      * +
      */
+
     public UniquePersonList sort() {
+
         PersonComparator personComparator = new PersonComparator();
         internalList.sort(personComparator);
 
         return this;
+
     }
 
     private class PersonComparator implements Comparator<Person> {
         public int compare(Person first, Person second) {
             return first.getName().toString().compareToIgnoreCase(second.getName().toString());
         }
+
+
     }
 
     /**
