@@ -14,8 +14,11 @@ public class Person implements ReadOnlyPerson {
     private Phone phone;
     private Email email;
     private Address address;
+    private int seqNumber;
+    private static int nextSeqNumber = 1;
 
     private final UniqueTagList tags;
+
     /**
      * Assumption: Every field must be present and not null.
      */
@@ -25,8 +28,20 @@ public class Person implements ReadOnlyPerson {
         this.email = email;
         this.address = address;
         this.tags = new UniqueTagList(tags); // protect internal tags from changes in the arg list
+        this.seqNumber = nextSeqNumber;
+        nextSeqNumber++;
+
     }
 
+    public int getSeqNumber() {
+        return this.seqNumber;
+
+    }
+    public int setSeqNumber(int number){
+
+       return this.seqNumber= number;
+        
+    }
     /**
      * Copy constructor.
      */
