@@ -138,6 +138,14 @@
 || Enter command: || [Command entered:  add Esther Potato p/555555 e/esther@not.a.real.potato pa/555, epsilon street, #01-23, 456789 t/tubers t/starchy]
 || This person already exists in the address book
 || ===================================================
+|| 	1. David B Phone: 232424 Email: David@hotmail.com Address: 2311, june street Tags:
+|| 	2. mary kiss Tags: [secretive]
+|| 	3. nub peter Email: nub_peter.d@ntu.edu.sg Address: 342, hisses street Tags: [school][brothers]
+|| 	4. king dicky Phone: 2323 Address: 211, kid street Tags: [friends]
+|| 	5. tissue box Phone: 2323 Email: tissue@gmail.com Tags: [tissue][box]
+||
+|| 5 persons listed!
+|| ===================================================
 || Enter command: || [Command entered:  view]
 || Invalid command format! 
 || view: Views the non-private details of the person identified by the index number in the last shown person listing.
@@ -153,26 +161,98 @@
 || Enter command: || [Command entered:  view should be only one number]
 || The person index provided is invalid
 || ===================================================
+|| ===================================================
+|| 	1. David B Phone: 232424 Email: David@hotmail.com Address: 2311, june street Tags:
+|| 	2. mary kiss Tags: [secretive]
+|| 	3. nub peter Email: nub_peter.d@ntu.edu.sg Address: 342, hisses street Tags: [school][brothers]
+|| 	4. king dicky Phone: 2323 Address: 211, kid street Tags: [friends]
+|| 	5. tissue box Phone: 2323 Email: tissue@gmail.com Tags: [tissue][box]
+||
+|| 5 persons listed!
+|| ===================================================
 || Enter command: || [Command entered:  viewall should only be one number]
 || The person index provided is invalid
+|| ===================================================
+|| ===================================================
+|| 	1. David B Phone: 232424 Email: David@hotmail.com Address: 2311, june street Tags:
+|| 	2. mary kiss Tags: [secretive]
+|| 	3. nub peter Email: nub_peter.d@ntu.edu.sg Address: 342, hisses street Tags: [school][brothers]
+|| 	4. king dicky Phone: 2323 Address: 211, kid street Tags: [friends]
+|| 	5. tissue box Phone: 2323 Email: tissue@gmail.com Tags: [tissue][box]
+||
+|| 5 persons listed!
 || ===================================================
 || Enter command: || [Command entered:  view -1]
 || The person index provided is invalid
 || ===================================================
+|| ===================================================
+|| 	1. David B Phone: 232424 Email: David@hotmail.com Address: 2311, june street Tags:
+|| 	2. mary kiss Tags: [secretive]
+|| 	3. nub peter Email: nub_peter.d@ntu.edu.sg Address: 342, hisses street Tags: [school][brothers]
+|| 	4. king dicky Phone: 2323 Address: 211, kid street Tags: [friends]
+|| 	5. tissue box Phone: 2323 Email: tissue@gmail.com Tags: [tissue][box]
+||
+|| 5 persons listed!
+|| ===================================================
 || Enter command: || [Command entered:  view 0]
 || The person index provided is invalid
+|| ===================================================
+|| ===================================================
+|| 	1. David B Phone: 232424 Email: David@hotmail.com Address: 2311, june street Tags:
+|| 	2. mary kiss Tags: [secretive]
+|| 	3. nub peter Email: nub_peter.d@ntu.edu.sg Address: 342, hisses street Tags: [school][brothers]
+|| 	4. king dicky Phone: 2323 Address: 211, kid street Tags: [friends]
+|| 	5. tissue box Phone: 2323 Email: tissue@gmail.com Tags: [tissue][box]
+||
+|| 5 persons listed!
 || ===================================================
 || Enter command: || [Command entered:  view 6]
 || The person index provided is invalid
 || ===================================================
+|| ===================================================
+|| 	1. David B Phone: 232424 Email: David@hotmail.com Address: 2311, june street Tags:
+|| 	2. mary kiss Tags: [secretive]
+|| 	3. nub peter Email: nub_peter.d@ntu.edu.sg Address: 342, hisses street Tags: [school][brothers]
+|| 	4. king dicky Phone: 2323 Address: 211, kid street Tags: [friends]
+|| 	5. tissue box Phone: 2323 Email: tissue@gmail.com Tags: [tissue][box]
+||
+|| 5 persons listed!
+|| ===================================================
 || Enter command: || [Command entered:  viewall -1]
 || The person index provided is invalid
+|| ===================================================
+|| ===================================================
+|| 	1. David B Phone: 232424 Email: David@hotmail.com Address: 2311, june street Tags:
+|| 	2. mary kiss Tags: [secretive]
+|| 	3. nub peter Email: nub_peter.d@ntu.edu.sg Address: 342, hisses street Tags: [school][brothers]
+|| 	4. king dicky Phone: 2323 Address: 211, kid street Tags: [friends]
+|| 	5. tissue box Phone: 2323 Email: tissue@gmail.com Tags: [tissue][box]
+||
+|| 5 persons listed!
 || ===================================================
 || Enter command: || [Command entered:  viewall 0]
 || The person index provided is invalid
 || ===================================================
+|| ===================================================
+|| 	1. David B Phone: 232424 Email: David@hotmail.com Address: 2311, june street Tags:
+|| 	2. mary kiss Tags: [secretive]
+|| 	3. nub peter Email: nub_peter.d@ntu.edu.sg Address: 342, hisses street Tags: [school][brothers]
+|| 	4. king dicky Phone: 2323 Address: 211, kid street Tags: [friends]
+|| 	5. tissue box Phone: 2323 Email: tissue@gmail.com Tags: [tissue][box]
+||
+|| 5 persons listed!
+|| ===================================================
 || Enter command: || [Command entered:  viewall 6]
 || The person index provided is invalid
+|| ===================================================
+|| ===================================================
+|| 	1. David B Phone: 232424 Email: David@hotmail.com Address: 2311, june street Tags:
+|| 	2. mary kiss Tags: [secretive]
+|| 	3. nub peter Email: nub_peter.d@ntu.edu.sg Address: 342, hisses street Tags: [school][brothers]
+|| 	4. king dicky Phone: 2323 Address: 211, kid street Tags: [friends]
+|| 	5. tissue box Phone: 2323 Email: tissue@gmail.com Tags: [tissue][box]
+||
+|| 5 persons listed!
 || ===================================================
 || Enter command: || [Command entered:  add running Potato p/555555 e/run@not.a.real.potato pa/555, gugie street, #01-23, 456789 t/tubers t/starchy]
 || ===================================================

@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+
 import seedu.addressbook.data.person.Person;
 import seedu.addressbook.data.person.ReadOnlyPerson;
 import seedu.addressbook.data.person.UniquePersonList;
@@ -48,6 +49,14 @@ public class AddressBook {
             syncTagsWithMasterList(p);
         }
     }
+    /**
+     * Sorts the Addressbook list in alphabetical order
+        */
+     public AddressBook sort() {
+                 allPersons.sort();
+                 return this;
+
+}
 
     /**
      * Ensures that every tag in this person:

@@ -9,6 +9,7 @@ import seedu.addressbook.commands.AddCommand;
 import seedu.addressbook.commands.Command;
 import seedu.addressbook.commands.CommandResult;
 import seedu.addressbook.commands.ExitCommand;
+import seedu.addressbook.commands.*;
 import seedu.addressbook.data.AddressBook;
 import seedu.addressbook.data.person.ReadOnlyPerson;
 import seedu.addressbook.parser.Parser;
@@ -34,8 +35,7 @@ public class Main {
     private StorageFile storage;
     private AddressBook addressBook;
     private Formatter formatter;
-    private Command command ;
-
+    private Command command;
 
 
     /**
@@ -99,7 +99,7 @@ public class Main {
 
     /**
      * Reads the user command and executes it, until the user issues the exit command.
-     * sad
+     * Straight away show the list that has been added
      */
     private void runCommandLoopUntilExitCommand() {
         Command command;
@@ -107,8 +107,17 @@ public class Main {
             String userCommandText = ui.getUserCommand();
             command = new Parser().parseCommand(userCommandText);
             CommandResult result = executeCommand(command);
-            recordResult(result);
+
+
+            if (command instanceof AddCommand) {
+                Command temp = new Parser().parseCommand(ListCommand.COMMAND_WORD);
+                CommandResult ouputTemp = executeCommand(temp);
+                recordResult(ouputTemp);
+                ui.showResultToUser(ouputTemp);
+            } else
+                recordResult(result);
             ui.showResultToUser(result);
+
 
         } while (!ExitCommand.isExit(command));
     }
