@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Optional;
 
 
+import seedu.addressbook.commands.AddCommand;
 import seedu.addressbook.commands.Command;
 import seedu.addressbook.commands.CommandResult;
 import seedu.addressbook.commands.ExitCommand;
@@ -15,6 +16,7 @@ import seedu.addressbook.storage.StorageFile;
 import seedu.addressbook.storage.StorageFile.InvalidStorageFilePathException;
 import seedu.addressbook.storage.StorageFile.StorageOperationException;
 import seedu.addressbook.ui.TextUi;
+import seedu.addressbook.ui.Formatter;
 
 
 /**
@@ -31,6 +33,10 @@ public class Main {
     private TextUi ui;
     private StorageFile storage;
     private AddressBook addressBook;
+    private Formatter formatter;
+    private Command command ;
+
+
 
     /**
      * The list of person shown to the user most recently.
@@ -59,9 +65,14 @@ public class Main {
     private void start(String[] launchArgs) {
         try {
             this.ui = new TextUi();
+            this.formatter = new Formatter();
             this.storage = initializeStorage(launchArgs);
             this.addressBook = storage.load();
             ui.showWelcomeMessage(VERSION, storage.getPath());
+            command = new Parser().parseCommand(ui.getUserCommand());
+            CommandResult results = executeCommand(command);
+            recordResult(results);
+            formatter.showResultToUser(results);
 
         } catch (InvalidStorageFilePathException | StorageOperationException e) {
             ui.showInitFailedMessage();
