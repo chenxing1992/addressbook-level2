@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class UtilsTest {
 
@@ -43,4 +44,24 @@ public class UtilsTest {
     private void assertNotUnique(Object... objects) {
         assertFalse(Utils.elementsAreUnique(Arrays.asList(objects)));
     }
+
+    /**
+     * 
+     */
+    @Test
+    public void isAnyNull() {
+
+
+        assertNotNull();
+
+
+        assertNotNull(999);
+        assertNotNull("hello");
+        assertNotNull("");
+        assertNotNull(999, "june");
+        assertNotNull("my", "name", "is", "socute");
+        assertNotNull(000,000);
+
+    }
+    private void assertNotNull(Object... objects) { assertFalse(Utils.isAnyNull(objects)); }
 }
